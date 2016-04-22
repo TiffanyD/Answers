@@ -1,0 +1,42 @@
+In your own words. I want to know how deep your knowledge is about the two components in Python	
+1	What is the difference between list and dictionary?
+2	Which do you prefer and why?
+3	What area does list solve that dictionary doesn't and vice versa
+4	How many elements are in m if m = [[x, y] for x in range(0, 4) for y in range(0, 4)]
+5	How do you get all keys in a dictionary?
+6	How do you get all values in a dictionary?
+7	How do you remove last object from a list?
+8	How do you compare 2 lists?
+9	How do you remove duplicate values in a list?
+10	What is Dict and List comprehensions are?
+
+
+1. A list has a fixed "key" in each value which is called the "index" while in a dictionary you can assign keys and call each value according to their corresponding keys. They also have different ways in adding a new value or replacing another.
+
+2. My answer would depend on the program assigned to me because I would use the easiest to access. However, I would personally choose the dictionary since you could assign a key on each value and call it using the corresponding key.
+
+3. In a list, you could automatically access the values in each indices since they have fixed numbering (from index[0] upwards) while in a dictionary you would have to use a for in loop to have access to their keys and values inside. On the other hand, dictionaries are more secured in terms of people having access to the values inside of each key in your dictionary.
+
+4. 16
+5.
+dict={'key':'value','key2':'value2'}
+for key in dict:
+	print key
+6. 
+dict={'key':'value','key2':'value2'}
+for key in dict:
+	print dict[key]
+7.
+list_a=[1,2,3]
+list_a.remove(list_a[len(list_a)-1])
+8. 
+list_a=[1,2,3]
+list_b=[1,1,3]
+def compareLists(list1,list2):
+	if list_a==listb:
+		return "True"
+	else:
+		return "False"
+compareLists(list_a,list_b)
+9. set(list_a)
+10. List comprehensions are lists that you can manipulate by assigning it to a for loop with a range you want. Dictionary comprehensions are processed the same way however you should include your keys inside as well.
